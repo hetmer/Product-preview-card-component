@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Montserrat:wght@500;700&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.attribution { 
+    font-size: 18px; 
+    text-align: center; 
+}
+
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+div{
+    display: block;
+}
+
+.card{
+    height: 500px;
+    width: 600px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    justify-content: center;
+    border-radius: 2rem;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.left img{
+    width: 300px;
+    height: 500px;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.right{
+    margin: 40px;
+}
+
+.para{
+   
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+    margin-top: 20px;
+}
+
+.title{
+    margin-top: 20px;
+    font-family: 'Fraunces', serif;
+    font-weight: bolder;
+    line-height: 33px;
+}
+
+.paragraph{
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: gray;
+}
+
+.prices{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    text-align: center;
+}
+
+.firstPrice{
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.secondPrice{
+    text-decoration: line-through;
+    display: flex;
+    color: gray;
+    margin-right: 30px;
+    font-size: 14px;
+    text-align: center;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+
+.button{
+    margin-top: 60px;
+    background-color:hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 16px;
+    font-family: 'Fraunces', serif;
+    text-align: center;
+    align-items: center;
+    padding: 1.5px; 
+} 
+
+.button:hover{
+    cursor: pointer;
+    background-color: rgb(140, 221, 147);
+}
+
+.cart-icon{
+    height: 14px;
+    width: 14px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width:375px) {
+    .card{
+        width: 340px;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        border-radius: 2rem;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+
+    .left img{
+        margin-left: 3px;
+        height: 255px;
+        width: 340px;
+        overflow: hidden;    
+    }
+
+    .perfume{
+        height: 500px;
+        width: 400px;
+        margin: -140px -5px -250px -20px;
+    }
+
+
+    .right{  
+        width: 290px;
+        height: 550px;
+        margin-top: 245px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .heading{
+        color: gray;
+        font-family: 'Fraunces', serif;
+        font-size: 17px;
+        margin-top: 1px;
+        margin-bottom: 15px;
+    }
+
+    .prices{
+        display: flex;
+        height: 45px;
+        text-align: center;
+    }
+
+    .firstPrice{
+        color: hsl(158, 36%, 37%);
+        font-size: 30px;
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        margin-top: 5px;
+        display: flex;
+    }
+
+    .secondPrice{
+        text-decoration: line-through;
+        display: flex;
+        color: gray;
+        margin-top: 15px;
+        font-size: 13px;
+        font-weight: 500;
+        text-align: center;
+        flex-direction: row;
+    }
+
+    .button{
+        background-color: hsl(158, 36%, 37%);
+        border-radius: 5px;
+        height: 40px;
+        color: hsl(0, 0%, 100%);
+        margin-top: 5px;
+        font-size: 14px;
+        font-family: 'Fraunces', serif;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .cart-icon{
+        height: 14px;
+        width: 14px;
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+}
